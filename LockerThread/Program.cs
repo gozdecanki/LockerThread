@@ -17,7 +17,7 @@ namespace LockerThread
             new Thread(BirTanesinSen).Start(3);
             new Thread(BirTanesinSen).Start(4);
             new Thread(BirTanesinSen).Start(5);
-
+            new Thread(BirTanesinSen).Start(6);
             Console.WriteLine("Main thread: Bekliyorum");
             Console.ReadLine();
         }
@@ -38,7 +38,7 @@ namespace LockerThread
                 for (int i = 0; i < 10; i++)
                 {
                     Console.WriteLine(id + " Tur: " + i);
-                    Thread.Sleep(1000);
+                    Thread.Sleep(20);
                 }
 
 
